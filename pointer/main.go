@@ -6,5 +6,6 @@ import (
 
 func main() {
 	//basic.Basic()
-	basic.Number()
+	//basic.Number()
+	basic.Result()
 }
