@@ -12,7 +12,6 @@ func Basic() {
 	a = 3
 	b = 2
 
-	// & : memory address , * : value
 	fmt.Println("a:", a)
 	fmt.Println("p:", p)
 	fmt.Println("*p:", *p)
