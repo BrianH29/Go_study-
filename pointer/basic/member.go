@@ -29,7 +29,12 @@ func Print() {
 	var m Member = Member{name: "Brian", age: 25, gender: "M", address: "Seoul", hobby: "soccer"}
 
 	fmt.Println("주소, 취미 입력하세요 : ")
-	fmt.Scanf("%s %s", &m.address, &m.hobby)
+	_, err := fmt.Scanf("%s %s", &m.address, &m.hobby)
+
+	if err != nil {
+		fmt.Println("잘못 입력하셨습니다.")
+		return
+	}
 
 	//m.writeMember(m.name, m.age, m.gender, m.address, m.hobby)
 	m.writeMember(m.name, m.age, m.gender, m.address, m.hobby)
